@@ -2,7 +2,7 @@
 class TodoEvent{}
 
 class addTaskEvent extends TodoEvent{
-  int id;
+  String id;
   String title;
   String desc;
 
@@ -10,7 +10,7 @@ class addTaskEvent extends TodoEvent{
 }
 
 class removeTaskEvent extends TodoEvent{
-   int id;
+   String id;
 
    removeTaskEvent(this.id);
 }
