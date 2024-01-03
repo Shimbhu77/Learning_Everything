@@ -10,8 +10,8 @@ import { ChildComponent } from './app.child';
   imports: [ParentComponent],
   template:`<div style="border: 10px solid green;">
     <h1 style="text-align: center;">App Component</h1>
-    <h2 style="text-align: center;">{{title}}</h2>
-    <parent-comp></parent-comp>
+    <!-- <h2 style="text-align: center;">{{title}}</h2> -->
+    <parent-comp [app_title]="title"></parent-comp>
   </div>`
 })
 export class AppComponent {
