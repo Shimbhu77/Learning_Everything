@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   selector: 'app-child',
   template: `
     <div>
+    <h1> Using *ngIf and *ngIfElse Directive</h1>
       <h1 *ngIf="isActive; else elseBlock" style="background-color: green;">
         Currently I am Active.
       </h1>
@@ -17,5 +18,5 @@ import { Component } from '@angular/core';
   imports: [CommonModule],
 })
 export class ChildComponent {
-  isActive = false;
+  isActive = true;
 }
