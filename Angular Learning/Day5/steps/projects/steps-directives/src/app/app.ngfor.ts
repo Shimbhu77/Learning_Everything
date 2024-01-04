@@ -8,8 +8,8 @@ import { Component } from "@angular/core";
         <div>
             <h1> Using *ngFor Directive</h1>
             <h1>Best Travel Places in India</h1>
-            <ul *ngFor="let city of bestTravelPlacesInIndia">
-                <li>{{city}}</li>
+            <ul *ngFor="let city of bestTravelPlacesInIndia; let idx=index">
+                <li> {{idx+1}}. {{city}}</li>
             </ul>
         </div>
       `,
