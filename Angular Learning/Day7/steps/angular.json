@@ -95,6 +95,99 @@
           }
         }
       }
+    },
+    "steps-advanced-routing": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/steps-advanced-routing",
+      "sourceRoot": "projects/steps-advanced-routing/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/steps-advanced-routing",
+            "index": "projects/steps-advanced-routing/src/index.html",
+            "browser": "projects/steps-advanced-routing/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/steps-advanced-routing/tsconfig.app.json",
+            "assets": [
+              "projects/steps-advanced-routing/src/favicon.ico",
+              "projects/steps-advanced-routing/src/assets"
+            ],
+            "styles": [
+              "projects/steps-advanced-routing/src/styles.css"
+            ],
+            "scripts": [],
+            "server": "projects/steps-advanced-routing/src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "projects/steps-advanced-routing/server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "steps-advanced-routing:build:production"
+            },
+            "development": {
+              "buildTarget": "steps-advanced-routing:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "steps-advanced-routing:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/steps-advanced-routing/tsconfig.spec.json",
+            "assets": [
+              "projects/steps-advanced-routing/src/favicon.ico",
+              "projects/steps-advanced-routing/src/assets"
+            ],
+            "styles": [
+              "projects/steps-advanced-routing/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   }
 }
