@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23",
+    "scripts": {
+      "start": "node index.js",
+      "test": "mocha tests",
+      "json-server": "json-server --watch db.json"
+  }
+  
+
+  }
+}
