@@ -40,7 +40,7 @@ public class FindMinElementInArray {
         {
             return arr[index];
         }
-        
+          
         return Math.min(arr[index],minElementFromReverse(arr, index-1));
     }
 
