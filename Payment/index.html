@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razorpay Payment Gateway</title>
+</head>
+<body>
+  <button id="rzp-button1">Pay with Razorpay</button>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    const options = {
+      key: 'rzp_test_kA3djoqugBbteB', // Enter the Key ID generated from the Dashboard
+      amount: 50000, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+      currency: 'INR',
+      name: 'Divine Energy',
+      description: 'Test Transaction',
+      image: 'https://crazyneon.com/cdn/shop/files/CN_Final_Logo-01_1_ba77c7cf-c4e7-4166-a534-1d64515af25f.png?v=1708070396&width=500',
+      order_id: 'order_O4j8fCNLaG4VUy', // This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      handler: function (response) {
+        alert(`Payment ID: ${response.razorpay_payment_id}`);
+        alert(`Order ID: ${response.razorpay_order_id}`);
+        alert(`Signature: ${response.razorpay_signature}`);
+        console.log(response);
+      },
+      prefill: {
+        name: 'Shimbhu Kumawat',
+        email: 'shimbhu.musterdekho@gmail.com',
+        contact: '9000090000'
+      },
+      notes: {
+        address: 'Razorpay Corporate Office'
+      },
+      theme: {
+        color: '#3399cc'
+      }
+    };
+
+    const rzp1 = new Razorpay(options);
+
+    rzp1.on('payment.failed', function (response) {
+      alert(`Error Code: ${response.error.code}`);
+      alert(`Error Description: ${response.error.description}`);
+      alert(`Error Source: ${response.error.source}`);
+      alert(`Error Step: ${response.error.step}`);
+      alert(`Error Reason: ${response.error.reason}`);
+      alert(`Metadata Order ID: ${response.error.metadata.order_id}`);
+      alert(`Metadata Payment ID: ${response.error.metadata.payment_id}`);
+    });
+
+    document.getElementById('rzp-button1').onclick = function (e) {
+      rzp1.open();
+      e.preventDefault();
+    };
+  </script>
+</body>
+</html>
