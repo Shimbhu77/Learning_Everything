@@ -1,4 +1,4 @@
-public class DeleteNodeFromLast {
+public class ReverseLinkedList {
     
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5};
@@ -6,7 +6,15 @@ public class DeleteNodeFromLast {
         Node head = new GenerateLinkedList().generate(arr);
         // head = null;
 
-        head = deleteNodeFromLast(head);
+        // normal reverse
+        // head = reverseLinkedList(head);
+
+        // recursion reverse
+
+        Node prev = null;
+        Node curr = head;
+
+        head = reverseLinkedListWithRecursion(prev, curr);
 
         Node temp = head;
 
@@ -21,58 +29,41 @@ public class DeleteNodeFromLast {
 
     }
 
-
-    // with loops 
-
-    public static Node deleteNodeFromLast(Node head)
+    public static Node reverseLinkedList(Node head)
     {
-        if(head != null)
+        Node prev = null;
+        Node curr = head;
+
+        while(curr!=null)
         {
-            if(head.next==null)
-            {
-                head = null;
-                return head;
-            }
-            else
-            {
-                 Node prev = null;
-                 Node curr = head;
-
-                //  while(curr.next!=null)
-                //  {
-                //     prev = curr;
-                //     curr = curr.next;
-                //  }
-
-                //  prev.next = null;
-
-                deleteNodeWithRecursion(head, prev, curr);
-
-                 return head;
-            }
-            
+            Node fut = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = fut;
         }
 
-        return head;
+        head = prev;
+
+        return head; 
     }
 
-    // with recursion
-    public static void deleteNodeWithRecursion(Node head,Node prev,Node curr)
+    public static Node reverseLinkedListWithRecursion(Node prev,Node curr)
     {
-        if(curr.next==null)
+        if(curr == null)
         {
-            prev.next = null;
-            curr = null;
-            return;
+        return prev;
         }
 
-        prev = curr;
-        curr = curr.next;
+        Node fut = curr.next;
+        curr.next = prev;
 
-        deleteNodeWithRecursion(head,prev,curr);
+        return reverseLinkedListWithRecursion(curr, fut);
+
     }
-    
+
+
 }
+
 
 
 
@@ -123,8 +114,5 @@ class GenerateLinkedList {
         this.data = data;
     }
 }
-
-
-
 
 

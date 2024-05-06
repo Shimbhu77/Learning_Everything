@@ -6,7 +6,7 @@ public class DeleteNodeFromMiddle {
         Node head = new GenerateLinkedList().generate(arr);
         // head = null;
 
-        int k = 2;
+        int k = 5;
 
         head = deleteNodeFromMiddle(head,k);
 
@@ -40,14 +40,16 @@ public class DeleteNodeFromMiddle {
                  Node prev = null;
                  Node curr = head;
 
-                 while(k-->1)
-                 {
-                    prev = curr;
-                    curr = curr.next;
-                 }
+                //  while(k-->1)
+                //  {
+                //     prev = curr;
+                //     curr = curr.next;
+                //  }
 
-                 prev.next = curr.next;
-                 curr.next = null;
+                //  prev.next = curr.next;
+                //  curr.next = null;
+
+                deleteNodeWithRecursion(head,prev,curr,k);
 
                  return head;
             }
@@ -55,6 +57,21 @@ public class DeleteNodeFromMiddle {
         }
 
         return head;
+    }
+
+    public static void deleteNodeWithRecursion(Node head,Node prev,Node curr,int k)
+    {
+        if(k==1)
+        {
+            prev.next = curr.next;
+            curr.next = null;
+            return;
+        }
+
+        prev = curr;
+        curr = curr.next;
+
+        deleteNodeWithRecursion(head, prev, curr, k-1);
     }
 }
 

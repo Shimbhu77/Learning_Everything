@@ -1,12 +1,20 @@
-public class DeleteNodeFromLast {
-    
+public class RotateLinkedList {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5};
 
         Node head = new GenerateLinkedList().generate(arr);
-        // head = null;
+        // head = null;\
+        int k = 7;
 
-        head = deleteNodeFromLast(head);
+        // normal reverse
+        head = rotateLinkedListKTimes(head,k);
+
+        // recursion reverse
+
+        // Node prev = null;
+        // Node curr = head;
+
+        // head = reverseLinkedListWithRecursion(prev, curr);
 
         Node temp = head;
 
@@ -22,56 +30,48 @@ public class DeleteNodeFromLast {
     }
 
 
-    // with loops 
-
-    public static Node deleteNodeFromLast(Node head)
+    public static Node rotateLinkedListKTimes(Node head,int k)
     {
-        if(head != null)
-        {
-            if(head.next==null)
-            {
-                head = null;
-                return head;
-            }
-            else
-            {
-                 Node prev = null;
-                 Node curr = head;
+        Node temp = head;
+        int size = 0;
 
-                //  while(curr.next!=null)
-                //  {
-                //     prev = curr;
-                //     curr = curr.next;
-                //  }
-
-                //  prev.next = null;
-
-                deleteNodeWithRecursion(head, prev, curr);
-
-                 return head;
-            }
-            
+        while (temp !=null) {
+            size++;
+            temp = temp.next;
         }
+
+        k = k % size;
+
+        int rotation = size-k;
+
+        if(rotation == size)
+        {
+            return head;
+        }
+
+        temp = head;
+
+        while (rotation-->1) {
+            temp = temp.next;
+        }
+
+        Node rotatedList = temp.next;
+
+        temp.next = null;
+
+        Node start = head;
+
+        head = rotatedList;
+
+        while(rotatedList.next !=null)
+        {
+            rotatedList = rotatedList.next;
+        }
+
+        rotatedList.next = start;
 
         return head;
     }
-
-    // with recursion
-    public static void deleteNodeWithRecursion(Node head,Node prev,Node curr)
-    {
-        if(curr.next==null)
-        {
-            prev.next = null;
-            curr = null;
-            return;
-        }
-
-        prev = curr;
-        curr = curr.next;
-
-        deleteNodeWithRecursion(head,prev,curr);
-    }
-    
 }
 
 
@@ -123,8 +123,6 @@ class GenerateLinkedList {
         this.data = data;
     }
 }
-
-
 
 
 
