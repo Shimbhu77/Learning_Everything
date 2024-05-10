@@ -12,7 +12,8 @@ public class MergeTwoSortedLinkedList {
         head1 = generateDoublyLinkedList(arr1, head1);
         head2 = generateDoublyLinkedList(arr2, head2);
 
-        Node head = mergeTwoSortedLinkedList(head1,head2);
+        // Node head = mergeTwoSortedLinkedList(head1,head2);
+        Node head = mergeTwoSortedLinkedListWithoutExtraSpace(head1,head2);
 
         Node temp = head;
 
@@ -29,6 +30,44 @@ public class MergeTwoSortedLinkedList {
 
     }
 
+    public static Node mergeTwoSortedLinkedListWithoutExtraSpace(Node curr1,Node curr2)
+    {
+         Node head = new Node(0);
+         Node tail = head;
+
+         while(curr1 != null && curr2 != null)
+         {
+            if(curr1.data <= curr2.data)
+            {
+                tail.next = curr1;
+                tail = tail.next;
+                curr1 = curr1.next;
+                tail.next = null;
+            }
+            else
+            {
+                tail.next = curr2;
+                tail = tail.next;
+                curr2 = curr2.next;
+                tail.next = null;
+            }
+         }
+
+         if(curr1 != null)
+         {
+            tail.next = curr1;
+         }
+         else
+         {
+            tail.next = curr2;
+         }
+
+         Node temp = head;
+         head = head.next;
+         temp.next = null;
+
+         return head;
+    }
     public static Node mergeTwoSortedLinkedList(Node head1,Node head2)
     {
         Node head = null;
