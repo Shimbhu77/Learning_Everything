@@ -27,7 +27,8 @@ public class CloneLinkedList {
 
 
         // Node headCopy = cloneList(head);
-        Node headCopy = cloneListUsingMap(head);
+        // Node headCopy = cloneListUsingMap(head);
+        Node headCopy = cloneListUsingWithoutExtraSpace(head);
 
         System.out.println(headCopy);
 
@@ -47,40 +48,78 @@ public class CloneLinkedList {
 
     }
 
-    public static Node cloneListUsingMap(Node head)
+
+
+    public static Node cloneListUsingWithoutExtraSpace(Node head)
     {
         Node headCopy = null;
         Node tailCopy = null;
 
-        Map<Node,Node> map = new HashMap<>();
-
         Node curr = head;
 
+        // Created Copy of Elements
         while(curr != null)
         {
             if(headCopy == null)
             {
                 headCopy = new Node(curr.data);
                 tailCopy = headCopy;
-                map.put(curr, tailCopy);
                 curr = curr.next;
             }
             else
             {
                 tailCopy.next = new Node(curr.data);
                 tailCopy = tailCopy.next;
-                map.put(curr, tailCopy);
                 curr = curr.next;
             }
         }
 
+        // insert copy elements into original list
+
         curr = head;
         Node currCopy = headCopy;
+        Node front = null;
+        Node frontCopy = null;
 
         while (curr != null) {
-            currCopy.arb = map.get(curr.arb);
-            currCopy = currCopy.next;
-            curr = curr.next;
+            
+            front = curr.next;
+            frontCopy = currCopy.next;
+            
+            curr.next = currCopy;
+            currCopy.next = front;
+
+            curr = front;
+            currCopy = frontCopy;
+        }
+
+        // assign random pointers
+
+        curr = head;
+
+        while (curr != null) {
+            
+            currCopy = curr.next;
+
+            if (curr.arb != null) {
+                currCopy.arb = curr.arb.next;
+            }
+
+            curr = currCopy.next;
+        }
+
+        // Disconnect the Linked List
+
+        curr = head;
+        // currCopy = headCopy;
+
+        while (curr.next != null ) {
+
+            currCopy = curr.next;
+
+            curr.next = currCopy.next;
+
+            curr = currCopy;
         }
 
         return headCopy;
@@ -131,6 +170,47 @@ public class CloneLinkedList {
 
                 currCopy.arb = tempCopy;
             }
+            currCopy = currCopy.next;
+            curr = curr.next;
+        }
+
+        return headCopy;
+
+    }
+
+    public static Node cloneListUsingMap(Node head)
+    {
+        Node headCopy = null;
+        Node tailCopy = null;
+
+        // Map<Node,Node> map = new HashMap<>();
+        Map<Node,Node> map = new ConcurrentHashMap<>();
+
+        Node curr = head;
+
+        while(curr != null)
+        {
+            if(headCopy == null)
+            {
+                headCopy = new Node(curr.data);
+                tailCopy = headCopy;
+                map.put(curr, tailCopy);
+                curr = curr.next;
+            }
+            else
+            {
+                tailCopy.next = new Node(curr.data);
+                tailCopy = tailCopy.next;
+                map.put(curr, tailCopy);
+                curr = curr.next;
+            }
+        }
+
+        curr = head;
+        Node currCopy = headCopy;
+
+        while (curr != null) {
+            currCopy.arb = map.get(curr.arb);
             currCopy = currCopy.next;
             curr = curr.next;
         }
