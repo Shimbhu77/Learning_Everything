@@ -3,7 +3,7 @@ import java.util.*;
 public class StockSpanProblem {
     public static void main(String[] args) {
         
-        int[] arr = {100,80,60,70,60,75,85};
+        int[] arr = {60,70,100,80,60,70,60,75,85};
         int n = arr.length;
         
         int[] ans = stockSpan(arr, n);
@@ -20,23 +20,21 @@ public class StockSpanProblem {
 
         int[] ans = new int[n];
          
-        for(int i=0;i<n;i++)
+        for(int i=n-1;i>=0;i--)
         {
-             while(!st.isEmpty() && arr[i] >= arr[st.peek()])
+             while(!st.isEmpty() && arr[i] > arr[st.peek()])
              {
+                ans[st.peek()] = st.peek()-i;
                 st.pop();
              }
 
-             if(st.isEmpty())
-             {
-                ans[i]=1;
-             }
-             else
-             {
-                 ans[i] = i-st.peek();
-             }
-
              st.push(i);
+        }
+
+        while(!st.isEmpty())
+        {
+            ans[st.peek()] = st.peek()+1;
+            st.pop();
         }
         
         return ans;
