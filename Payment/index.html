@@ -10,13 +10,14 @@
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
   <script>
     const options = {
-      key: 'rzp_test_kA3djoqugBbteB', // Enter the Key ID generated from the Dashboard
+      key: 'rzp_test_WKca1qluBlUVCZ', // Enter the Key ID generated from the Dashboard
       amount: 50000, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
       currency: 'INR',
       name: 'Divine Energy',
       description: 'Test Transaction',
       image: 'https://crazyneon.com/cdn/shop/files/CN_Final_Logo-01_1_ba77c7cf-c4e7-4166-a534-1d64515af25f.png?v=1708070396&width=500',
-      order_id: 'order_O9yCKbjyl6pxtY', // This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      // order_id: 'order_OCG0NqVyiUKEOU', // This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      order_id: 'order_OD8BFuNPb33P5E', // This is a sample Order ID. Pass the `id` obtained in the response of Step 1
       handler: function (response) {
         alert(`Payment ID: ${response.razorpay_payment_id}`);
         alert(`Order ID: ${response.razorpay_order_id}`);
