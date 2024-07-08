@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class CreateMinHeap {
     public static void main(String[] args) {
         
+        // n*logn time complexity
         MinHeap heap = new MinHeap(7);
         heap.insert(6);
         heap.insert(12);

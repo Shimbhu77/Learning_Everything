@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class CreateMaxHeap {
     public static void main(String[] args) {
         
+        // n*logn time complexity
         MaxHeap heap = new MaxHeap(4);
         heap.insert(6);
         heap.insert(12);
