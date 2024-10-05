@@ -1,0 +1,59 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: S3 bucket and EC2 template using parameters
+
+# metadata is added 
+Metadata:
+ AWS::CloudFormation::Interface:
+  ParametersGroup:
+   - Label: 
+       default: "S3 Bucket Configuration"
+     Parameters:
+      - S3Bucket
+   - Label:
+       default: "EC2 Instance Configuration"
+     Parameters:
+      - EC2AMIID
+      - InstanceTypeID
+  ParameterLabels:
+    S3Bucket:
+     default: "S3 Bucket Name"  
+    EC2AMIID:
+     default: "AMI ID for OS"
+    InstanceTypeID:
+     default: "Instance Type for Machine" 
+
+Parameters:
+  EC2AMIID:
+    Description: Select the AMI-ID of the machine
+    Type: String
+    Default: ami-0e86e20dae9224db8
+    AllowedValues:
+      - ami-0e86e20dae9224db8
+      - ami-0182f373e66f89c85
+  InstanceTypeID:
+    Description: Select the instance type
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.nano
+      - t2.micro
+      - t2.small
+  S3Bucket: 
+    Type: String
+    Description: Enter the S3 Bucket Name
+  # KeyName:
+  #   Type: AWS::EC2::KeyPair::KeyName
+  #   Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
+
+Resources:
+  ShimbhuS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref S3Bucket
+  
+  ShimbhuEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref EC2AMIID
+      InstanceType: !Ref InstanceTypeID
+      # KeyName: !Ref KeyName

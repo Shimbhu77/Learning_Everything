@@ -1,0 +1,8 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Template for a simple web application' # Give a meaningful description
+
+Resources:
+  MyS3Bucket:  # Give a resources name
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: shimbhu-77-iac-bucket # bucket name

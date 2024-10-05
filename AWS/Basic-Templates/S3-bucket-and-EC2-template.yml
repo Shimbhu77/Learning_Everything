@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Template for S3 and EC2 instance # Give a meaningful description
+
+Resources:
+
+  #S3 Bucket template
+  ShimbhuS3Bucket:  # Give a resources name
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: shimbhu-bucket # bucket name
+  
+  #EC2 template
+  ShimbhuEC2Intance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0e86e20dae9224db8
+      InstanceType: t2.micro
+ 
