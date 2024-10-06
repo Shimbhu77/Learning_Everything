@@ -21,9 +21,16 @@
         <property name="hibernate.format_sql">true</property>
 
         <!-- Automatically create the database schema -->
-        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
 
-        <mapping class="com.shimbhu.Gems"/>
+        <mapping class="com.shimbhu.model.Gems"/>
+        <mapping class="com.shimbhu.model.embeddable_objects.TouristPlace"/>
+        <mapping class="com.shimbhu.model.one_to_one_mapping.Husband"/>
+        <mapping class="com.shimbhu.model.one_to_one_mapping.Wife"/>
+        <mapping class="com.shimbhu.model.one_to_many_mapping.Author"/>
+        <mapping class="com.shimbhu.model.one_to_many_mapping.Book"/>
+        <mapping class="com.shimbhu.model.many_to_many_mapping.Writer"/>
+        <mapping class="com.shimbhu.model.many_to_many_mapping.Publication"/>
 
     </session-factory>
 
