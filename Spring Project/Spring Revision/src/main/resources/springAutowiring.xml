@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<bean id="researcher1" class="com.shimbhu.autowiring.xml.Researcher" autowire="byName">
+        <property name="name" value="Albert Einstein"/>
+    </bean>
+
+    <bean id="researcher2" class="com.shimbhu.autowiring.xml.Researcher" autowire="byType">
+        <property name="name" value="Max Planck"/>
+    </bean>-->
+
+    <bean id="researcher3" class="com.shimbhu.autowiring.xml.Researcher" autowire="constructor">
+        <property name="name" value="Niels Bohr"/>
+    </bean>
+
+    <!--<bean id="thesis" class="com.shimbhu.autowiring.xml.Thesis">
+        <property name="title" value="Special theory of Relativity"/>
+        <property name="description" value="Theory About Relativity. how one frame is behaving in front of another frame."/>
+    </bean>-->
+
+    <bean id="planckThesis" class="com.shimbhu.autowiring.xml.Thesis">
+        <property name="title" value="Quantum Physics"/>
+        <property name="description" value="Father of Quantum Physics"/>
+    </bean>
+
+</beans>

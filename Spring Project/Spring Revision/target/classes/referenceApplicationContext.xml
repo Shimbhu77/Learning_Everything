@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="amberFort" class="com.shimbhu.reference_object.Fort">
+        <property name="name" value="Amber Fort"/>
+        <property name="builtBy" value="Maha Raja Maan Singh"/>
+        <property name="location" ref="locationRef"/>
+    </bean>
+
+    <!-- using reference object  -->
+    <bean id="locationRef" class="com.shimbhu.reference_object.Location">
+        <property name="country" value="India"/>
+        <property name="city" value="Jaipur"/>
+    </bean>
+
+    <bean id="locationDelhi" class="com.shimbhu.reference_object.Location">
+        <constructor-arg value="India"/>
+        <constructor-arg value="Delhi"/>
+    </bean>
+
+    <bean id="redFort" class="com.shimbhu.reference_object.Fort">
+        <constructor-arg value="Red Fort"/>
+        <constructor-arg value="Shah Jahan"/>
+        <constructor-arg ref="locationDelhi"/>
+    </bean>
+
+
+
+</beans>

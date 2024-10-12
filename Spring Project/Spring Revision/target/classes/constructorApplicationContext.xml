@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- using constructor injection  -->
+    <bean id="book1" class="com.shimbhu.constructor_injection.Book">
+        <constructor-arg>
+            <value>2893</value>
+        </constructor-arg>
+        <constructor-arg>
+            <value>Harry Potter the Philosopher Stone</value>
+        </constructor-arg>
+        <constructor-arg>
+            <value>J.K. Rowling</value>
+        </constructor-arg>
+
+    </bean>
+
+    <bean id="book2" class="com.shimbhu.constructor_injection.Book">
+        <constructor-arg value="2092"/>
+        <constructor-arg value="Harry Potter the Secrets of Chamber"/>
+        <constructor-arg value="J.K. Rowling"/>
+    </bean>
+
+    <bean id="addition" class="com.shimbhu.constructor_injection.Addition">
+        <constructor-arg value="34" type="int" index="1"/>
+        <constructor-arg value="77" type="int" index="0"/>
+    </bean>
+
+</beans>
