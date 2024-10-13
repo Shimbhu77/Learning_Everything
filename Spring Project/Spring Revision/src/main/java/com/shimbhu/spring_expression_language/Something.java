@@ -24,6 +24,9 @@ public class Something {
     @Value("#{new com.shimbhu.spring_expression_language.Person('Shimbhu Kumawat')}")
     private Person person;
 
+    @Value("#{16>11}")
+    private boolean isGreater;
+
     public String getX() {
         return x;
     }
@@ -60,6 +63,18 @@ public class Something {
         this.person = person;
     }
 
+    public Person getPerson() {
+        return person;
+    }
+
+    public boolean isGreater() {
+        return isGreater;
+    }
+
+    public void setGreater(boolean greater) {
+        isGreater = greater;
+    }
+
     @Override
     public String toString() {
         return "Something{" +
@@ -68,6 +83,7 @@ public class Something {
                 ", squareRoot=" + squareRoot +
                 ", pi=" + pi +
                 ", person=" + person +
+                ", isGreater=" + isGreater +
                 '}';
     }
 }
