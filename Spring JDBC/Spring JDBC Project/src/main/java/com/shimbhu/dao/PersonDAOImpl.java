@@ -23,6 +23,14 @@ public class PersonDAOImpl implements PersonDAO{
         return jdbcTemplate.update(query,person.getName(),person.getCity(),person.getId());
     }
 
+    @Override
+    public int delete(Integer id) {
+
+        String query = "delete from person where id = ?";
+
+        return jdbcTemplate.update(query,id);
+    }
+
     public JdbcTemplate getJdbcTemplate() {
         return jdbcTemplate;
     }

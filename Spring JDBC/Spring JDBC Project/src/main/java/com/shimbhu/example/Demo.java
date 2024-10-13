@@ -23,14 +23,19 @@ public class Demo {
 //
 //        System.out.println("new rows inserted : "+numberOfRowsAffected);
 
-        Person person = new Person();
-        person.setId(1);
-        person.setName("Payal");
-        person.setCity("Chomu, Jaipur");
+//        Person person = new Person();
+//        person.setId(1);
+//        person.setName("Payal");
+//        person.setCity("Chomu, Jaipur");
+//
+//        int numberOfRowsAffected = personDAO.update(person);
+//
+//        System.out.println(" rows updated : "+numberOfRowsAffected);
 
-        int numberOfRowsAffected = personDAO.update(person);
 
-        System.out.println(" rows updated : "+numberOfRowsAffected);
+        int numberOfRowsAffected = personDAO.delete(1);
+
+        System.out.println(" rows deleted : "+numberOfRowsAffected);
 
     }
 }

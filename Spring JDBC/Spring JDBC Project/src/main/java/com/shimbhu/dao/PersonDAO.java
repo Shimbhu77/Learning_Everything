@@ -6,4 +6,5 @@ public interface PersonDAO {
 
     int insert(Person person);
     int update(Person person);
+    int delete(Integer id);
 }
