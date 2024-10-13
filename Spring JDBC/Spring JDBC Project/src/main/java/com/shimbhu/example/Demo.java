@@ -13,15 +13,15 @@ public class Demo {
 
         PersonDAO personDAO = context.getBean("personDao",PersonDAO.class);
 
-//        Person person = new Person();
-//        person.setId(1);
-//        person.setName("Payal Kumawat");
-//        person.setGender("Female");
-//        person.setCity("Jaipur");
+        Person person = new Person();
+        person.setId(2);
+        person.setName("Payal Kumawat");
+        person.setGender("Female");
+        person.setCity("Jaipur");
+
+        int numberOfRowsAffected = personDAO.insert(person);
 //
-//        int numberOfRowsAffected = personDAO.insert(person);
-//
-//        System.out.println("new rows inserted : "+numberOfRowsAffected);
+        System.out.println("new rows inserted : "+numberOfRowsAffected);
 
 //        Person person = new Person();
 //        person.setId(1);
@@ -33,9 +33,14 @@ public class Demo {
 //        System.out.println(" rows updated : "+numberOfRowsAffected);
 
 
-        int numberOfRowsAffected = personDAO.delete(1);
+//        int numberOfRowsAffected = personDAO.delete(1);
+//
+//        System.out.println(" rows deleted : "+numberOfRowsAffected);
 
-        System.out.println(" rows deleted : "+numberOfRowsAffected);
+        Person person1 = personDAO.findById(2);
+
+        System.out.println(" person object  : "+person1);
+
 
     }
 }

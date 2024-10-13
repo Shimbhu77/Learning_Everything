@@ -2,6 +2,7 @@ package com.shimbhu.dao;
 
 import com.shimbhu.model.Person;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 
 public class PersonDAOImpl implements PersonDAO{
 
@@ -29,6 +30,15 @@ public class PersonDAOImpl implements PersonDAO{
         String query = "delete from person where id = ?";
 
         return jdbcTemplate.update(query,id);
+    }
+
+    @Override
+    public Person findById(Integer id) {
+
+        String query = "select * from person where id = ?";
+
+        RowMapper<Person> rowMapper = new RowMapperImpl();
+        return jdbcTemplate.queryForObject(query,rowMapper,id);
     }
 
     public JdbcTemplate getJdbcTemplate() {
