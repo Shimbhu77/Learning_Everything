@@ -3,6 +3,7 @@ package com.shimbhu.component_annotation;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+//@Component("student1") now we can use student1 as bean class name while fetching object in application context.
 @Component
 public class Temple {
 
