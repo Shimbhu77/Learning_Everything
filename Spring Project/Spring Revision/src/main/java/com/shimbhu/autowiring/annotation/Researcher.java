@@ -1,13 +1,15 @@
 package com.shimbhu.autowiring.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Researcher {
 
     private String name;
 
     // field injection it won't call any setter and constructor to inject the values
-    // @Autowired
+    @Autowired
+    @Qualifier("thesis2")
     private Thesis thesis;
 
     public String getName() {
@@ -50,7 +52,7 @@ public class Researcher {
     }
 
     // Constructor injection it will call researcher class constructor
-    @Autowired
+//    @Autowired
     public Researcher(Thesis thesis) {
         System.out.println("Researcher only thesis constructor is called.");
         this.thesis = thesis;

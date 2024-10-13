@@ -16,6 +16,11 @@
         <property name="description" value="Father of Quantum Physics"/>
     </bean>
 
+    <bean id="thesis2" class="com.shimbhu.autowiring.annotation.Thesis">
+        <property name="title" value="Quantum Theory"/>
+        <property name="description" value="A new Quantum World."/>
+    </bean>
+
     <context:annotation-config />
 
 </beans>
