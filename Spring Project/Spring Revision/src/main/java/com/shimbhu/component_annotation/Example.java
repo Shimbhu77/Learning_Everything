@@ -12,5 +12,6 @@ public class Example {
         Temple temple = context.getBean("temple", Temple.class);
 
         System.out.println(temple);
+        System.out.println(temple.getCities());
     }
 }
