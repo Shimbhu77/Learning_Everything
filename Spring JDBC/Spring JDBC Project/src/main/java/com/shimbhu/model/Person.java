@@ -47,4 +47,18 @@ public class Person {
     public void setCity(String city) {
         this.city = city;
     }
+
+    public Person() {
+        System.out.println("zero arg called.");
+    }
+
+    public Person(Integer id, String name, String gender, String city) {
+
+        System.out.println("parameterized arg called.");
+
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.city = city;
+    }
 }
