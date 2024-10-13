@@ -15,6 +15,14 @@ public class PersonDAOImpl implements PersonDAO{
         return jdbcTemplate.update(query,person.getId(),person.getName(),person.getGender(),person.getCity());
     }
 
+    @Override
+    public int update(Person person) {
+
+        String query = "update person set name = ?, city = ? where id = ?";
+
+        return jdbcTemplate.update(query,person.getName(),person.getCity(),person.getId());
+    }
+
     public JdbcTemplate getJdbcTemplate() {
         return jdbcTemplate;
     }

@@ -13,15 +13,24 @@ public class Demo {
 
         PersonDAO personDAO = context.getBean("personDao",PersonDAO.class);
 
+//        Person person = new Person();
+//        person.setId(1);
+//        person.setName("Payal Kumawat");
+//        person.setGender("Female");
+//        person.setCity("Jaipur");
+//
+//        int numberOfRowsAffected = personDAO.insert(person);
+//
+//        System.out.println("new rows inserted : "+numberOfRowsAffected);
+
         Person person = new Person();
         person.setId(1);
-        person.setName("Payal Kumawat");
-        person.setGender("Female");
-        person.setCity("Jaipur");
+        person.setName("Payal");
+        person.setCity("Chomu, Jaipur");
 
-        int numberOfRowsAffected = personDAO.insert(person);
+        int numberOfRowsAffected = personDAO.update(person);
 
-        System.out.println("new rows inserted : "+numberOfRowsAffected);
+        System.out.println(" rows updated : "+numberOfRowsAffected);
 
     }
 }
