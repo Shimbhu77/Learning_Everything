@@ -4,6 +4,8 @@ import com.shimbhu.model.Person;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
+import java.util.List;
+
 public class PersonDAOImpl implements PersonDAO{
 
     private JdbcTemplate jdbcTemplate;
@@ -39,6 +41,15 @@ public class PersonDAOImpl implements PersonDAO{
 
         RowMapper<Person> rowMapper = new RowMapperImpl();
         return jdbcTemplate.queryForObject(query,rowMapper,id);
+    }
+
+    @Override
+    public List<Person> findAll() {
+
+        String query = "select * from person ";
+
+        RowMapper<Person> rowMapper = new RowMapperImpl();
+        return jdbcTemplate.query(query,rowMapper);
     }
 
     public JdbcTemplate getJdbcTemplate() {
