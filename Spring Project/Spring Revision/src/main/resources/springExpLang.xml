@@ -10,9 +10,6 @@
 		http://www.springframework.org/schema/util
 		https://www.springframework.org/schema/util/spring-util.xsd">
 
-   <bean id="desert" class="com.shimbhu.bean_scope.Desert" scope="prototype">
-       <property name="desertName" value="Thar Desert"/>
-       <property name="country" value="India"/>
-   </bean>
+   <context:component-scan base-package="com.shimbhu.spring_expression_language"/>
 
 </beans>
