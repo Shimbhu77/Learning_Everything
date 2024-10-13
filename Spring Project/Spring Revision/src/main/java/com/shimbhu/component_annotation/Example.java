@@ -10,8 +10,15 @@ public class Example {
         ApplicationContext context = new ClassPathXmlApplicationContext("componentAnnotation.xml");
 
         Temple temple = context.getBean("temple", Temple.class);
+        Temple temple2 = context.getBean("temple", Temple.class);
 
         System.out.println(temple);
         System.out.println(temple.getCities());
+
+        System.out.println(temple2);
+        System.out.println(temple2.getCities());
+
+        System.out.println(temple.hashCode());
+        System.out.println(temple2.hashCode());
     }
 }

@@ -1,12 +1,14 @@
 package com.shimbhu.component_annotation;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 //@Component("student1") now we can use student1 as bean class name while fetching object in application context.
 @Component
+@Scope("prototype")
 public class Temple {
 
     @Value("Kedarnath")
