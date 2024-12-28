@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/HibernateRevision/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HibernateRevision/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JavaCollections/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JavaCollections/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JavaMultiThreading/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JavaMultiThreading/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JavaReflectionAPI/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JavaReflectionAPI/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JdbcRevision/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JdbcRevision/src/main/resources" charset="UTF-8" />
   </component>
 </project>

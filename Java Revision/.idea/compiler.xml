@@ -7,8 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JavaReflectionAPI" />
+        <module name="JdbcRevision" />
         <module name="JavaMultiThreading" />
+        <module name="JavaCollections" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="HibernateRevision" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>

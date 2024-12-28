@@ -1,4 +1,4 @@
-package com.shimbhu.vector;
+package com.shimbhu.list.vector;
 
 
 import java.util.Vector;

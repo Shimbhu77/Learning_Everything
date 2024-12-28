@@ -6,6 +6,9 @@
       <list>
         <option value="$PROJECT_DIR$/JavaReflectionAPI/pom.xml" />
         <option value="$PROJECT_DIR$/JavaMultiThreading/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaCollections/pom.xml" />
+        <option value="$PROJECT_DIR$/JdbcRevision/pom.xml" />
+        <option value="$PROJECT_DIR$/HibernateRevision/pom.xml" />
       </list>
     </option>
   </component>

@@ -18,8 +18,8 @@ public class CallingProceduresWithParametersUsingCallableStatement {
         try {
 
             CallableStatement callableStatement = connection.prepareCall(query);
-            callableStatement.setString(1,year);
-            callableStatement.registerOutParameter(2, Types.INTEGER);
+            callableStatement.setString(1,year); // IN parameter
+            callableStatement.registerOutParameter(2, Types.INTEGER); // OUT parameter
 
             ResultSet resultSet = callableStatement.executeQuery();
 

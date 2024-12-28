@@ -1,0 +1,58 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'AWS CloudFormation Template for Elastic Beanstalk Environment with Java 21 on ARM64 and specified IAM roles'
+
+Resources:
+  ElasticBeanstalkApplication:
+    Type: AWS::ElasticBeanstalk::Application
+    Properties:
+      ApplicationName: pilot-looms-and-spin-01
+      Description: My Elastic Beanstalk Application for Java 21
+
+  ElasticBeanstalkEnvironment:
+    Type: AWS::ElasticBeanstalk::Environment
+    Properties:
+      ApplicationName: !Ref ElasticBeanstalkApplication
+      EnvironmentName: pilot-looms-and-spin-01-env
+      SolutionStackName: "64bit Amazon Linux 2023 v4.3.2 running Corretto 21"
+      OptionSettings:
+        - Namespace: aws:autoscaling:launchconfiguration
+          OptionName: InstanceType
+          Value: t4g.small
+        - Namespace: aws:elasticbeanstalk:environment
+          OptionName: EnvironmentType
+          Value: SingleInstance
+        # Custom environment properties
+        - Namespace: aws:elasticbeanstalk:application:environment
+          OptionName: SERVER_PORT
+          Value: "5000"
+        - Namespace: aws:elasticbeanstalk:application:environment
+          OptionName: spring_jackson_time-zone
+          Value: UTC
+        - Namespace: aws:elasticbeanstalk:application:environment
+          OptionName: JAVA_HOME
+          Value: /usr/lib/jvm/java
+        # IAM Roles
+        - Namespace: aws:elasticbeanstalk:environment
+          OptionName: ServiceRole
+          Value: arn:aws:iam::183295426080:role/service-role/aws-elasticbeanstalk-service-role
+        - Namespace: aws:autoscaling:launchconfiguration
+          OptionName: IamInstanceProfile
+          Value: aws-elasticbeanstalk-ec2-role
+
+Outputs:
+  EnvironmentName:
+    Description: Name of the Elastic Beanstalk Environment
+    Value: !Ref ElasticBeanstalkEnvironment
+  EnvironmentId:
+    Description: ID of the Elastic Beanstalk Environment
+    Value: !Ref ElasticBeanstalkEnvironment
+  ApplicationName:
+    Description: Name of the Elastic Beanstalk Application
+    Value: !Ref ElasticBeanstalkApplication
+  EnvironmentCNAME:
+    Description: CNAME of the Elastic Beanstalk Environment
+    Value: !GetAtt ElasticBeanstalkEnvironment.EndpointURL
+    Condition: EnvironmentReady
+
+Conditions:
+  EnvironmentReady: !Not [!Equals [!GetAtt ElasticBeanstalkEnvironment.Status, "Failed"]]

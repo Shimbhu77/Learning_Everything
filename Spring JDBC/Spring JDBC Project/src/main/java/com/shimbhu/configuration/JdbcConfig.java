@@ -1,7 +1,5 @@
 package com.shimbhu.configuration;
 
-import com.shimbhu.dao.PersonDAO;
-import com.shimbhu.dao.PersonDAOImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
