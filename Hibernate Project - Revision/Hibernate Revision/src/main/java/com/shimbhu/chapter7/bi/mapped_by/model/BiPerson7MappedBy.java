@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -28,6 +29,6 @@ public class BiPerson7MappedBy {
     private String name;
     private String city;
 
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "persons")
+    @ManyToMany(cascade = CascadeType.ALL,mappedBy = "persons")
     private List<BiCompany7MappedBy> companies;
 }
