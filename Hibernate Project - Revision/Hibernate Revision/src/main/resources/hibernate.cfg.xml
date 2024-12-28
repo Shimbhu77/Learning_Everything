@@ -30,5 +30,7 @@
 
         <mapping class="com.shimbhu.chapter2.Student"/>
 
+        <mapping class="com.shimbhu.chapter4.Person"/>
+
     </session-factory>
 </hibernate-configuration>
