@@ -7,7 +7,7 @@
 
         <!-- database connection -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/jdbcdb</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernatetestdb</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">admin</property>
 
@@ -26,7 +26,9 @@
 
         <!-- Automatically create the database tables -->
 
-        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <mapping class="com.shimbhu.chapter2.Student"/>
 
     </session-factory>
 </hibernate-configuration>
