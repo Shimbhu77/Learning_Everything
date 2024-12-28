@@ -26,7 +26,7 @@
 
         <!-- Automatically create the database tables -->
 
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
 
         <mapping class="com.shimbhu.chapter2.Student"/>
 

@@ -1,4 +1,4 @@
-package com.shimbhu;
+package com.shimbhu.chapter1;
 
 import hibernate_util.HibernateUtil;
 import org.hibernate.SessionFactory;
