@@ -51,6 +51,8 @@ public class UniDemo {
 
         // it won't insert data into the car table because we are using many to from car side
         session.persist(uniPerson6); // we are using cascadeType.ALL which automatically inserts the child database
+        session.persist(car);
+        session.persist(car2);
 
         transaction.commit();
 
