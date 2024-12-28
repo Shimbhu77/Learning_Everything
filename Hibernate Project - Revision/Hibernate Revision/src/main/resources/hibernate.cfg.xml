@@ -56,6 +56,10 @@
         <mapping class="com.shimbhu.chapter6.bi.without_mapped_by.model.BiPerson6WithoutMappedBy"/>
         <mapping class="com.shimbhu.chapter6.bi.without_mapped_by.model.BiCar6WithoutMappedBy"/>
 
+        <!-- chapter 7 uni mapping  many to many -->
+        <mapping class="com.shimbhu.chapter7.uni.model.UniCompany7"/>
+        <mapping class="com.shimbhu.chapter7.uni.model.UniPerson7"/>
+
 
 
     </session-factory>
