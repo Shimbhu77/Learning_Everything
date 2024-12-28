@@ -32,7 +32,7 @@
 
         <mapping class="com.shimbhu.chapter4.Person"/>
 
-        <!-- chapter 5 uni mapping  -->
+        <!-- chapter 5 uni mapping one to one  -->
         <mapping class="com.shimbhu.chapter5.uni.model.UniPerson5"/>
         <mapping class="com.shimbhu.chapter5.uni.model.UniAadhar5"/>
 
@@ -44,9 +44,13 @@
         <mapping class="com.shimbhu.chapter5.bi.not_mapped_by.model.BiPerson5WithoutMappedBy"/>
         <mapping class="com.shimbhu.chapter5.bi.not_mapped_by.model.BiAadhar5WithoutMappedBy"/>
 
-        <!-- chapter 6 uni mapping  -->
+        <!-- chapter 6 uni mapping  one to many -->
         <mapping class="com.shimbhu.chapter6.uni.model.UniPerson6"/>
         <mapping class="com.shimbhu.chapter6.uni.model.UniCar6"/>
+
+        <!-- chapter 6 bidirectional with mappedBy mapping  -->
+        <mapping class="com.shimbhu.chapter6.bi.mapped_by.model.BiPerson6MappedBy"/>
+        <mapping class="com.shimbhu.chapter6.bi.mapped_by.model.BiCar6MappedBy"/>
 
 
 

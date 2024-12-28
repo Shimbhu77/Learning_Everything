@@ -1,4 +1,4 @@
-package com.shimbhu.chapter6.uni.model;
+package com.shimbhu.chapter6.bi.mapped_by.model;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -18,8 +18,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "person_uni_chapter6")
-public class UniPerson6 {
+@Table(name = "person_bi_chapter6_mapped_by")
+public class BiPerson6MappedBy {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,6 +28,6 @@ public class UniPerson6 {
     private String name;
     private String city;
 
-//    @OneToMany(cascade = CascadeType.ALL)
-//    private List<BiCar6MappedBy> cars;
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "person")
+    private List<BiCar6MappedBy> cars;
 }
