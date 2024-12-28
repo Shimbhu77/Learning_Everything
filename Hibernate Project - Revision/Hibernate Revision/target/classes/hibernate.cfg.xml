@@ -11,6 +11,14 @@
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">admin</property>
 
+<!--
+        &lt;!&ndash; second level cache using ehcache &ndash;&gt;
+
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+-->
+
+
         <!-- SQL Dialect-->
 
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
@@ -67,8 +75,6 @@
         <!-- chapter 7 bidirectional without mappedBy mapping  -->
         <mapping class="com.shimbhu.chapter7.bi.without_mapped_by.model.BiPerson7WithoutMappedBy"/>
         <mapping class="com.shimbhu.chapter7.bi.without_mapped_by.model.BiCompany7WithoutMappedBy"/>
-
-
 
     </session-factory>
 </hibernate-configuration>
