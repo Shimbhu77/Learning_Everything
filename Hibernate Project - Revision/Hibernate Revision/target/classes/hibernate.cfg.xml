@@ -60,6 +60,10 @@
         <mapping class="com.shimbhu.chapter7.uni.model.UniCompany7"/>
         <mapping class="com.shimbhu.chapter7.uni.model.UniPerson7"/>
 
+        <!-- chapter 7 bidirectional with mappedBy mapping  -->
+        <mapping class="com.shimbhu.chapter7.bi.mapped_by.model.BiPerson7MappedBy"/>
+        <mapping class="com.shimbhu.chapter7.bi.mapped_by.model.BiCompany7MappedBy"/>
+
 
 
     </session-factory>
