@@ -28,6 +28,6 @@ public class UniPerson6 {
     private String name;
     private String city;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<UniCar6> cars;
+//    @OneToMany(cascade = CascadeType.ALL)
+//    private List<UniCar6> cars;
 }

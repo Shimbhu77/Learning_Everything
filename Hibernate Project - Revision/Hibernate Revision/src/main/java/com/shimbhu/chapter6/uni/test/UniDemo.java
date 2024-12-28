@@ -33,25 +33,28 @@ public class UniDemo {
         UniCar6 car = new UniCar6();
         car.setCarNumber("1234-568");
         car.setCarCompany("TATA Motors");
+        car.setPerson(uniPerson6);
 
         UniCar6 car2 = new UniCar6();
         car2.setCarNumber("838-568");
         car2.setCarCompany("Mahindra Motors");
+        car2.setPerson(uniPerson6);
 
-        List<UniCar6> cars = new ArrayList<>();
+//        List<UniCar6> cars = new ArrayList<>();
+//
+//        cars.add(car);
+//        cars.add(car2);
 
-        cars.add(car);
-        cars.add(car2);
-
-        uniPerson6.setCars(cars);
+//        uniPerson6.setCars(cars);
 
         Transaction transaction = session.beginTransaction();
 
+        // it won't insert data into the car table because we are using many to from car side
         session.persist(uniPerson6); // we are using cascadeType.ALL which automatically inserts the child database
 
         transaction.commit();
 
-        System.out.println("BiPerson5WithoutMappedBy saved successfully.");
+        System.out.println("Person saved successfully.");
 
         session.close();
 
