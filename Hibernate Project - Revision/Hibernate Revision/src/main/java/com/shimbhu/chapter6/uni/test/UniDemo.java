@@ -40,7 +40,7 @@ public class UniDemo {
         car2.setCarCompany("Mahindra Motors");
         car2.setPerson(uniPerson6);
 
-//        List<BiCar6MappedBy> cars = new ArrayList<>();
+//        List<BiCar6WithoutMappedBy> cars = new ArrayList<>();
 //
 //        cars.add(car);
 //        cars.add(car2);

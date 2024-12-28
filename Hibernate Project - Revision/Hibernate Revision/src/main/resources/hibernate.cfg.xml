@@ -52,6 +52,10 @@
         <mapping class="com.shimbhu.chapter6.bi.mapped_by.model.BiPerson6MappedBy"/>
         <mapping class="com.shimbhu.chapter6.bi.mapped_by.model.BiCar6MappedBy"/>
 
+        <!-- chapter 6 bidirectional without mappedBy mapping  -->
+        <mapping class="com.shimbhu.chapter6.bi.without_mapped_by.model.BiPerson6WithoutMappedBy"/>
+        <mapping class="com.shimbhu.chapter6.bi.without_mapped_by.model.BiCar6WithoutMappedBy"/>
+
 
 
     </session-factory>
