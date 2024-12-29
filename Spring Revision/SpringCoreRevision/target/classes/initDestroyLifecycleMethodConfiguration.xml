@@ -4,8 +4,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 		https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-      <bean class="com.shimbhu.init_destroy_lifecycle_method.University" name="university" init-method="init" destroy-method="destroy">
-          <property name="name" value="Maa Ganga University"/>
-          <property name="location" value="Bharatvarsh"/>
-      </bean>
+    <bean class="com.shimbhu.init_destroy_lifecycle_method.University" name="university" init-method="init"
+          destroy-method="destroy">
+        <property name="name" value="Maa Ganga University"/>
+        <property name="location" value="Bharatvarsh"/>
+    </bean>
+
+    <bean class="com.shimbhu.init_destroy_lifecycle_method.Company" name="company">
+        <property name="name" value="ShimbhuAI"/>
+        <property name="field" value="Physics And AI Research"/>
+    </bean>
+
+
 </beans>

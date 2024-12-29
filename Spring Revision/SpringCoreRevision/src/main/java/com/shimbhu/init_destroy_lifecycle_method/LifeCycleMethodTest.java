@@ -12,7 +12,11 @@ public class LifeCycleMethodTest {
 
         System.out.println(university);
 
-        // this will call the destroy method of lifecycle
+        // this will register call of the destroy method of lifecycle
         context.registerShutdownHook();
+
+        Company company = context.getBean("company", Company.class);
+
+        System.out.println(company);
     }
 }
