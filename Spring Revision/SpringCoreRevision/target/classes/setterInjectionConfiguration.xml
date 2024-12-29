@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- using value tag -->
+    <bean class="com.shimbhu.setter_injection.Student" name="student1">
+
+        <property name="studentId">
+            <value>77</value>
+        </property>
+
+        <property name="studentName">
+            <value>Shimbhu Kumawat</value>
+        </property>
+
+        <property name="studentCity">
+            <value>Jaipur</value>
+        </property>
+
+        <property name="studentDream">
+            <value>Research Scientist</value>
+        </property>
+
+    </bean>
+
+    <!-- using value attribute -->
+    <bean class="com.shimbhu.setter_injection.Student" name="student2">
+        <property name="studentId" value="57"/>
+        <property name="studentName" value="Payal Kumawat"/>
+        <property name="studentCity" value="Chomu" />
+        <property name="studentDream" value="Researcher"/>
+    </bean>
+
+
+
+
+</beans>
