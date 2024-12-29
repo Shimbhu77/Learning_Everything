@@ -32,6 +32,13 @@
                 <entry key="job3" value=" Software Engineer at Google"/>
             </map>
         </property>
+        
+        <property name="properties">
+            <props>
+                <prop key="house1">SK Mansion, Eden Garden, Jaipur</prop>
+                <prop key="house2">Payal Mansion, MG Road, Shimla</prop>
+            </props>
+        </property>
 
     </bean>
 
