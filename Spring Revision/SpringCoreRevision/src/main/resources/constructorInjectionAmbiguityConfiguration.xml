@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- by default spring container treat values as string then it will check first string constructor-->
+   <bean class="com.shimbhu.constructor_injection.ambiguity.Addition" name="addition">
+       <constructor-arg name="x" value="77" type="int"/>
+       <constructor-arg name="y" value="57" type="int"/>
+   </bean>
+
+</beans>
