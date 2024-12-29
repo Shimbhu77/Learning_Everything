@@ -1,14 +1,7 @@
-package com.shimbhu.bean_scope.annotation;
+package com.shimbhu.bean_scope.xml;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
-@Component // we can change object name using this : @Component("st"), now it will create object using st name
-@Scope("prototype") // prototype means each time spring container create new object
 public class Student {
 
-    @Value("Shimbhu Kumawat")
     private String name;
 
     private String age;
