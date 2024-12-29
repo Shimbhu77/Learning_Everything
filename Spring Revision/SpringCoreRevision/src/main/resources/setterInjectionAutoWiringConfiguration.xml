@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 		https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="com.shimbhu.auto_wiring.setter_injection.Location" name="locationOfFort">
+    <bean class="com.shimbhu.auto_wiring.setter_injection_xml.Location" name="locationOfFort">
         <property name="city" value="Jaipur"/>
         <property name="state" value="Rajasthan"/>
     </bean>
@@ -22,7 +22,7 @@
 
     <!--    by Type Auto Wiring -->
 
-    <bean class="com.shimbhu.auto_wiring.setter_injection.Fort" name="fort1" autowire="byType">
+    <bean class="com.shimbhu.auto_wiring.setter_injection_xml.Fort" name="fort1" autowire="byType">
         <property name="name" value="Amber Fort"/>
     </bean>
 

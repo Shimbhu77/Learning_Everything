@@ -1,4 +1,4 @@
-package com.shimbhu.auto_wiring.setter_injection;
+package com.shimbhu.auto_wiring.setter_injection_xml;
 
 
 import lombok.Data;
