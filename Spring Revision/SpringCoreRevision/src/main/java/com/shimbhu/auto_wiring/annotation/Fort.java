@@ -2,12 +2,14 @@ package com.shimbhu.auto_wiring.annotation;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Fort {
 
     private String name;
 
     @Autowired // it will use Field Injection using Java Reflection APIs
+    @Qualifier("location2")
     private Location location;
 
     //@Autowired // here it Fort one arg constructor is called, and it will use constructor Injection method
