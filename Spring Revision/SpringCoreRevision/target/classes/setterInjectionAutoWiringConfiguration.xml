@@ -9,6 +9,12 @@
         <property name="state" value="Rajasthan"/>
     </bean>
 
+    <!--    by Type will give Exception it is find more than one Object of Same Class-->
+    <!-- <bean class="com.shimbhu.auto_wiring.setter_injection.Location" name="location">
+         <property name="city" value="Udaipur"/>
+         <property name="state" value="Rajasthan"/>
+     </bean>
+ -->
     <!--    by name auto wiring
     <bean class="com.shimbhu.auto_wiring.setter_injection.Fort" name="fort1" autowire="byName">
         <property name="name" value="Amber Fort"/>
