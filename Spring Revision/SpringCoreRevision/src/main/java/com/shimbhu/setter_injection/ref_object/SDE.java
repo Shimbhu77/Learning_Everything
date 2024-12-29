@@ -5,7 +5,6 @@ import lombok.ToString;
 
 @Data
 public class SDE {
-
     private String name;
     private Skills skills;
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.shimbhu.constructor_injection.collections.Person" name="person">
+        <constructor-arg name="personId" value="1"/>
+        <constructor-arg name="personName" value="Shimbhu Kumawat"/>
+        <constructor-arg name="nickNames">
+            <list>
+                <value>Shimbhu</value>
+                <value>SK</value>
+            </list>
+        </constructor-arg>
+
+        <constructor-arg name="cities">
+            <set>
+                <value>Jaipur</value>
+                <value>Shimla</value>
+                <value>Shimla</value>
+                <value>London</value>
+            </set>
+        </constructor-arg>
+
+        <constructor-arg name="jobs">
+            <map>
+                <entry key="job1" value=" Software Engineer at MusterDekho"/>
+                <entry key="job2" value=" Software Engineer at Unknown"/>
+                <entry key="job3" value=" Software Engineer at Google"/>
+            </map>
+        </constructor-arg>
+
+        <constructor-arg name="properties">
+            <props>
+                <prop key="house1">SK Mansion, Eden Garden, Jaipur</prop>
+                <prop key="house2">Payal Mansion, MG Road, Shimla</prop>
+            </props>
+        </constructor-arg>
+
+    </bean>
+
+
+</beans>
