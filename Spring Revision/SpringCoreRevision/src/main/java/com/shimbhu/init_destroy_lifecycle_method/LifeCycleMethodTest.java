@@ -18,5 +18,9 @@ public class LifeCycleMethodTest {
         Company company = context.getBean("company", Company.class);
 
         System.out.println(company);
+
+        Car car = context.getBean("car", Car.class);
+
+        System.out.println(car);
     }
 }
