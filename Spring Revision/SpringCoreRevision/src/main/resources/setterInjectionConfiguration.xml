@@ -6,7 +6,7 @@
 
     <!-- we need only setter methods in the Bean Class-->
     <!-- using value tag -->
-    <bean class="com.shimbhu.setter_injection.Student" name="student1">
+    <bean class="com.shimbhu.setter_injection.basic.Student" name="student1">
 
         <property name="studentId">
             <value>77</value>
@@ -27,7 +27,7 @@
     </bean>
 
     <!-- using value attribute -->
-    <bean class="com.shimbhu.setter_injection.Student" name="student2">
+    <bean class="com.shimbhu.setter_injection.basic.Student" name="student2">
         <property name="studentId" value="57"/>
         <property name="studentName" value="Payal Kumawat"/>
         <property name="studentCity" value="Chomu" />

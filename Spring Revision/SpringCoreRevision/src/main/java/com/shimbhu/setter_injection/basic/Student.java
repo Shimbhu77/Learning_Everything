@@ -1,4 +1,4 @@
-package com.shimbhu.setter_injection;
+package com.shimbhu.setter_injection.basic;
 
 import lombok.Data;
 

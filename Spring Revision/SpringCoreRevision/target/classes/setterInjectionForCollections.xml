@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- we need only setter methods in the Bean Class-->
+    <bean class="com.shimbhu.setter_injection.collections.Person" name="person1">
+
+        <property name="personId" value="1"/>
+        <property name="personName" value="Shimbhu"/>
+        <property name="nickNames">
+            <list>
+                <value>Shimbhu</value>
+                <value>SK</value>
+            </list>
+        </property>
+
+        <property name="cities">
+            <set>
+                <value>Jaipur</value>
+                <value>Shimla</value>
+                <value>Shimla</value>
+                <value>London</value>
+            </set>
+        </property>
+
+        <property name="jobs">
+            <map>
+                <entry key="job1" value=" Software Engineer at MusterDekho"/>
+                <entry key="job2" value=" Software Engineer at Unknown"/>
+                <entry key="job3" value=" Software Engineer at Google"/>
+            </map>
+        </property>
+
+    </bean>
+
+
+
+
+
+</beans>
