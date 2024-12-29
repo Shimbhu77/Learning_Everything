@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class AnnotationAutoWiringDemo {
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("constructorInjectionAutoWiringConfiguration.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("annotationAutoWiringConfiguration.xml");
         Fort fort1 = applicationContext.getBean("fort1", Fort.class);
         System.out.println(fort1);
     }

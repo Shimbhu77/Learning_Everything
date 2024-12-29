@@ -1,10 +1,16 @@
 package com.shimbhu.auto_wiring.annotation;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Fort {
+
     private String name;
+
+    @Autowired // it will use Field Injection using Java Reflection APIs
     private Location location;
 
+    //@Autowired // here it Fort one arg constructor is called, and it will use constructor Injection method
     public Fort(Location location) {
         this.location = location;
         System.out.println("fort one arg constructor called.");
@@ -23,6 +29,7 @@ public class Fort {
         return location;
     }
 
+    //@Autowired // here Set Location is called, and it will use Setter Injection method
     public void setLocation(Location location) {
         this.location = location;
 
