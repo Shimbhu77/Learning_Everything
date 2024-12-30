@@ -11,6 +11,4 @@
         <property name="name" value="Payal Kumawat"/>
         <property name="age" value="22"/>
     </bean>
-
-
 </beans>
