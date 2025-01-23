@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var exportUtils_1 = require("./utils/exportUtils");
+var sum = (0, exportUtils_1.add)(7, 8);
+var sub = (0, exportUtils_1.substract)(7, 8);
+var mult = (0, exportUtils_1.multiply)(7, 8);
+var div = (0, exportUtils_1.divide)(24, 0);
+console.log(sum);
+console.log(sub);
+console.log(mult);
+console.log(div);
