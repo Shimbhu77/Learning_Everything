@@ -31,13 +31,14 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.93.0",
-    "constructs": "^10.2.69",
+    "@aws-cdk/aws-servicecatalogappregistry": "^1.204.0",
     "@aws-cdk/aws-servicecatalogappregistry-alpha": "^2.93.0-alpha.0",
     "@aws-solutions-constructs/aws-cloudfront-s3": "^2.42.0",
     "@aws-solutions-constructs/aws-eventbridge-lambda": "^2.42.0",
     "@aws-solutions-constructs/aws-lambda-sns": "^2.42.0",
+    "aws-cdk-lib": "^2.93.0",
     "cdk-nag": "^2.27.110",
+    "constructs": "^10.2.69",
     "source-map-support": "^0.5.21"
   }
 }

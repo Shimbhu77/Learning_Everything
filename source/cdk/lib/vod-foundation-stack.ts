@@ -538,11 +538,11 @@ export class VodFoundation extends cdk.Stack {
         /**
          * Subscribe the admin email address to the SNS topic created but the construct.
          */
-        snsTopic.snsTopic.addSubscription(new subs.EmailSubscription(adminEmail.valueAsString))
-
-        /**
-        * AppRegistry
+        snsTopic.snsTopic.addSubscription(new subs.EmailSubscription(adminEmail.valueAsString))        /**
+        * AppRegistry - Commented out due to tag validation issues
+        * Can be re-enabled if needed with proper tag management
         */
+        /*
         const applicationName = `vod-foundation-${cdk.Aws.REGION}-${cdk.Aws.ACCOUNT_ID}-${cdk.Aws.STACK_NAME}`;
         const attributeGroup = new appreg.AttributeGroup(this, 'AppRegistryAttributeGroup', {
             attributeGroupName: `${cdk.Aws.REGION}-${cdk.Aws.STACK_NAME}`,
@@ -553,18 +553,20 @@ export class VodFoundation extends cdk.Stack {
                 SolutionID: solutionId,
                 SolutionName: solutionName
             }
-        });
-        const appRegistry = new appreg.Application(this, 'AppRegistryApp', {
+        });        const appRegistry = new appreg.Application(this, 'AppRegistryApp', {
             applicationName: applicationName,
-            description: `Service Catalog application to track and manage all your resources. The SolutionId is ${solutionId} and SolutionVersion is ${solutionVersion}.`
+            description: `Service Catalog application to track and manage all your resources. The SolutionId is ${solutionId} and SolutionVersion is ${solutionVersion}.`,
+            tags: {
+                'Solutions_SolutionID': solutionId,
+                'Solutions_SolutionName': solutionName,
+                'Solutions_SolutionVersion': solutionVersion,
+                'Solutions_ApplicationType': 'AWS-Solutions'
+            }
         });
         appRegistry.associateApplicationWithStack(this);
-        cdk.Tags.of(appRegistry).add('Solutions:SolutionID', solutionId);
-        cdk.Tags.of(appRegistry).add('Solutions:SolutionName', solutionName);
-        cdk.Tags.of(appRegistry).add('Solutions:SolutionVersion', solutionVersion);
-        cdk.Tags.of(appRegistry).add('Solutions:ApplicationType', 'AWS-Solutions');
 
         attributeGroup.associateWith(appRegistry);
+        */
 
         /**
          * Stack Outputs
