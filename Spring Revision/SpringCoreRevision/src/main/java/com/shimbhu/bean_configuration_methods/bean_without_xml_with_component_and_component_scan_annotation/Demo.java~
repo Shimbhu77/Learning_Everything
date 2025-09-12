@@ -1,0 +1,2 @@
+package com.shimbhu.bean_configuration_methods.bean_without_xml_with_component_and_component_scan_annotation;public class Demo {
+}

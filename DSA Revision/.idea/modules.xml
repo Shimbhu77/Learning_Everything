@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA Revision.iml" filepath="$PROJECT_DIR$/.idea/DSA Revision.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DsaRevision.iml" filepath="$PROJECT_DIR$/DsaRevision.iml" />
     </modules>
   </component>
 </project>

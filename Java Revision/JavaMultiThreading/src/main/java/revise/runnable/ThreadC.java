@@ -1,0 +1,14 @@
+package revise.runnable;
+
+public class ThreadC implements Runnable {
+
+    /**
+     * Runs this operation.
+     */
+    @Override
+    public void run() {
+        for (int i = 11; i < 20; i++) {
+            System.out.println("Hello : " + i);
+        }
+    }
+}

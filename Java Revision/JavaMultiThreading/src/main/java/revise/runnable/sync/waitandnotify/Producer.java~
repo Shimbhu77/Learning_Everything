@@ -1,0 +1,4 @@
+package revise.runnable.sync.waitandnotify;
+
+public class Producer {
+}

@@ -33,7 +33,7 @@ public class MapImpl {
         System.out.println("LinkedHashMap: " + linkedHashMap);
 
         // TreeMap example
-        Map<String, Integer> treeMap = new TreeMap<>();
+        Map<String, Integer> treeMap = new TreeMap<>((a,b) -> a.compareTo(b));
         treeMap.put("Alice", 30);
         treeMap.put("Bob", 25);
         treeMap.put("Charlie", 35);

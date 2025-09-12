@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a722524f-a913-419d-b63d-642aa8fd536c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/comparable/ComparableExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/comparable/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/comparator/ComparatorExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/comparator/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/comparator/StudentSorting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/intr/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/intr/Animal2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/intr/Animal3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/intr/AnimalHabits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/intr/recro/q1/HackerEarth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/intr/recro/q1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/intr/recro/q1/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/karney/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/executorservice/ExecutorServiceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/executorservice/callable/CallableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/ThreadB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/ThreadC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/lambdaexpression/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/lambdaexpression/ThreadB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/lambdaexpression/ThreadC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/sync/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/sync/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/sync/TestThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/sync/solution/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/sync/solution/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/sync/solution/TestThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/sync/waitandnotify/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/runnable/sync/waitandnotify/SharedData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/threadclass/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/revise/threadclass/ThreadA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/existing_functional_interfaces/BiFunctionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/existing_functional_interfaces/ConsumerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/existing_functional_interfaces/FunctionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/existing_functional_interfaces/PredicateExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/existing_functional_interfaces/SupplierExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/existing_functional_interfaces/revise/BiFunctionEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/existing_functional_interfaces/revise/ConsumerEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/existing_functional_interfaces/revise/FunctionEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/existing_functional_interfaces/revise/PredicateEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/existing_functional_interfaces/revise/SupplierEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/lambda/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/lambda/LambdaExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/lambda/TestLambda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/lambda/TestLambdaWithParameterAndReturnType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/lambda/revise/Eval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/lambda/revise/LambdaEval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/lambda/revise/SingleEval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/streams/BasicExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/main/java/com/shimbhu/streams/revise/BasicExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Revision/JavaStreams/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adapter Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adapter Design Pattern/src/main/java/com/shimbhu/AdapterReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adapter Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adapter Design Pattern/src/main/java/com/shimbhu/Reports.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adapter Design Pattern/src/main/java/com/shimbhu/XmlReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adapter Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/Behavioural Design Pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Decorator Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Decorator Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Decorator Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Observer Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Observer Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Observer Design Pattern/src/main/java/com/shimbhu/Observable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Observer Design Pattern/src/main/java/com/shimbhu/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Observer Design Pattern/src/main/java/com/shimbhu/SubscriberObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Observer Design Pattern/src/main/java/com/shimbhu/YoutubeChannelObservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Observer Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Strategy Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Strategy Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Strategy Design Pattern/src/main/java/com/shimbhu/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Strategy Design Pattern/src/main/java/com/shimbhu/PaymentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Strategy Design Pattern/src/main/java/com/shimbhu/PaypalStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Strategy Design Pattern/src/main/java/com/shimbhu/RazorypayStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Behavioural Design Pattern/Strategy Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builder Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builder Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builder Design Pattern/src/main/java/com/shimbhu/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builder Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command Design Pattern/src/main/java/com/shimbhu/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command Design Pattern/src/main/java/com/shimbhu/Fan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command Design Pattern/src/main/java/com/shimbhu/FanCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command Design Pattern/src/main/java/com/shimbhu/Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command Design Pattern/src/main/java/com/shimbhu/LightCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command Design Pattern/src/main/java/com/shimbhu/RemoteControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/.idea/Creational Design Pattern Revision.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/Factory Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/Factory Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/Factory Design Pattern/src/main/java/com/shimbhu/SimpleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/Factory Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/Singleton Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/Singleton Design Pattern/src/main/java/com/shimbhu/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/Singleton Design Pattern/src/main/java/com/shimbhu/SingletonDoubleLockingClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/Singleton Design Pattern/src/main/java/com/shimbhu/SingletonEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/Singleton Design Pattern/src/main/java/com/shimbhu/SingletonStaticClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational Design Pattern/Singleton Design Pattern/src/test/java/com/shimbhu/DemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decorator Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decorator Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decorator Design Pattern/src/main/java/com/shimbhu/BoldTextDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decorator Design Pattern/src/main/java/com/shimbhu/ItalicTextDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decorator Design Pattern/src/main/java/com/shimbhu/SimpleText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decorator Design Pattern/src/main/java/com/shimbhu/Text.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decorator Design Pattern/src/main/java/com/shimbhu/TextDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decorator Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/factory/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/factory/AnimalFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/factory/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/factory/CatFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/factory/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/factory/DogFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/factory/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/simplefactory/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/simplefactory/AnimalFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/simplefactory/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/simplefactory/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/main/java/com/shimbhu/simplefactory/SimpleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Factory Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observer Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observer Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observer Design Pattern/src/main/java/com/shimbhu/Channel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observer Design Pattern/src/main/java/com/shimbhu/Subscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observer Design Pattern/src/main/java/com/shimbhu/YTChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observer Design Pattern/src/main/java/com/shimbhu/YTSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observer Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Singleton Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Singleton Design Pattern/src/main/java/com/shimbhu/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Singleton Design Pattern/src/main/java/com/shimbhu/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Singleton Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Strategy Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Strategy Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Strategy Design Pattern/src/main/java/com/shimbhu/CreditCardStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Strategy Design Pattern/src/main/java/com/shimbhu/NetBankingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Strategy Design Pattern/src/main/java/com/shimbhu/PaymentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Strategy Design Pattern/src/main/java/com/shimbhu/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Strategy Design Pattern/src/main/java/com/shimbhu/UPIStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Strategy Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/.idea/Structural Design Pattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/Decorator Design Pattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/Decorator Design Pattern/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/Decorator Design Pattern/src/main/java/com/shimbhu/BaseCoffee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/Decorator Design Pattern/src/main/java/com/shimbhu/CoffeeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/Decorator Design Pattern/src/main/java/com/shimbhu/CreamCoffeeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/Decorator Design Pattern/src/main/java/com/shimbhu/MilkCoffeeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/Decorator Design Pattern/src/main/java/com/shimbhu/SimpleCoffee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/Decorator Design Pattern/src/main/java/com/shimbhu/SugarCoffeeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural Design Pattern/Decorator Design Pattern/src/test/java/com/shimbhu/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS CDK/complete infrastructure/cdk-infra/bin/cdk-infra.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS CDK/complete infrastructure/cdk-infra/bin/cdk-infra.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS CDK/complete infrastructure/cdk-infra/lib/cdk-s3-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS CDK/complete infrastructure/cdk-infra/lib/cdk-s3-stack.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA Revision/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA Revision/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/binary_search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/binary_search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/graph/GraphRepresentationUsingAdjacencyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/graph/GraphRepresentationUsingAdjacencyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/graph/GraphRepresentationUsingAdjacencyMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/graph/GraphRepresentationUsingAdjacencyMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/sorting_algos/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/sorting_algos/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/sorting_algos/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/sorting_algos/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/sorting_algos/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA Revision/DsaRevision/src/main/java/com/shimbhu/sorting_algos/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Revision/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java Revision/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Revision/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java Revision/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Revision/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java Revision/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Revision/JavaCollections/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/map/MapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java Revision/JavaCollections/src/main/java/com/shimbhu/map/MapImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/runnable/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java Revision/JavaMultiThreading/src/main/java/runnable/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java demo/Uffizio/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java demo/Uffizio/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java demo/Uffizio/Test/src/main/java/com/shimbhu/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java demo/Uffizio/Test/src/main/java/com/shimbhu/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java demo/Uffizio/Test/src/main/java/com/shimbhu/mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Java demo/Uffizio/Test/src/main/java/com/shimbhu/mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Payment/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Payment/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2yJJRfIHWun49YAF1rpVExe0Prr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.App (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.App (3).executor&quot;: &quot;Run&quot;,
+    &quot;Application.App (4).executor&quot;: &quot;Run&quot;,
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Factory.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SimpleFactory.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Singleton.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kumaw/Desktop/Learning Everything/Learning_Everything/System Design&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shimbhu" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App (4)">
+    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shimbhu.App" />
+      <module name="ObserverDesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shimbhu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shimbhu.App" />
+      <module name="DecoratorDesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shimbhu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shimbhu.App" />
+      <module name="CommandDesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shimbhu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shimbhu.App" />
+      <module name="AdapterDesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shimbhu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shimbhu.App" />
+      <module name="BuilderDesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shimbhu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App (4)" />
+        <item itemvalue="Application.App (3)" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.App (2)" />
+        <item itemvalue="Application.App (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a722524f-a913-419d-b63d-642aa8fd536c" name="Changes" comment="" />
+      <created>1749546736075</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749546736075</updated>
+    </task>
+    <servers />
+  </component>
+</project>

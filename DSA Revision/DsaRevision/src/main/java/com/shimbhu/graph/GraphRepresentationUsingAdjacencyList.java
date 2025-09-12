@@ -1,101 +1,71 @@
 package com.shimbhu.graph;
 
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
-public class GraphRepresentationUsingAdjacencyMatrix {
+public class GraphRepresentationUsingAdjacencyList {
 
     public static void main(String[] args) {
 
         int vertices = 5;
         int edges = 6;
 
-        int[][] adjMat = new int[vertices][vertices];
+        Map<Integer, List<Integer>> adjacencyList = new HashMap<>();
+        Map<Integer, List<Edge>> adjacencyWeightedList = new HashMap<>();
+
+        Scanner scanner = new Scanner(System.in);
 
 
         // undirected - unweighted graph
-        Scanner scanner = new Scanner(System.in);
-
-        /*for(int i=0;i<edges;i++)
-        {
-            int u = scanner.nextInt();
-            int v = scanner.nextInt();
-
-            adjMat[u][v] = 1;
-            adjMat[v][u] = 1;
-        }
-
-        for(int i=0;i<vertices;i++)
-        {
-            for(int j=0;j<vertices;j++)
-            {
-                System.out.print(adjMat[i][j]+" ");
-            }
-
-            System.out.println();
-        }*/
-
-        // undirected - weighted graph
-
-        /*for(int i=0;i<edges;i++)
-        {
-            int u = scanner.nextInt();
-            int v = scanner.nextInt();
-            int weight = scanner.nextInt();
-
-            adjMat[u][v] = weight;
-            adjMat[v][u] = weight;
-        }
-
-        for(int i=0;i<vertices;i++)
-        {
-            for(int j=0;j<vertices;j++)
-            {
-                System.out.print(adjMat[i][j]+" ");
-            }
-
-            System.out.println();
-        }*/
-
-        // directed - unweighted graph
-
-        /*for(int i=0;i<edges;i++)
-        {
-            int u = scanner.nextInt();
-            int v = scanner.nextInt();
-
-            adjMat[u][v] = 1;
-        }
-
-        for(int i=0;i<vertices;i++)
-        {
-            for(int j=0;j<vertices;j++)
-            {
-                System.out.print(adjMat[i][j]+" ");
-            }
-
-            System.out.println();
-        }*/
-
-        // directed - weighted graph
 
         for(int i=0;i<edges;i++)
         {
-            int u = scanner.nextInt();
-            int v = scanner.nextInt();
-            int weight = scanner.nextInt();
+            int start = scanner.nextInt();
+            int destination = scanner.nextInt();
 
-            adjMat[u][v] = weight;
+            adjacencyList.computeIfAbsent(start, k -> new ArrayList<>());
+
+            List<Integer> list = adjacencyList.get(start);
+            list.add(destination);
+
+            adjacencyList.put(start,list);
         }
 
         for(int i=0;i<vertices;i++)
         {
-            for(int j=0;j<vertices;j++)
-            {
-                System.out.print(adjMat[i][j]+" ");
-            }
-
-            System.out.println();
+            System.out.println(i+" "+adjacencyList.get(i));
         }
 
+
+        // undirected - weighted graph
+
+
+
+        // directed - unweighted graph
+
+
+
+        // directed - weighted graph
+
+
+
+    }
+}
+
+class Edge
+{
+    Integer destination;
+    Integer weight;
+
+    Edge(){}
+
+    public Edge(Integer destination,Integer weight)
+    {
+        this.destination = destination;
+        this.weight = weight;
     }
 }

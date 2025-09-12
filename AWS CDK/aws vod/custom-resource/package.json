@@ -1,0 +1,11 @@
+{
+  "name": "custom-resource",
+  "version": "1.0.0",
+  "description": "Custom resource Lambda for VOD solution",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.1000.0",
+    "cfn-response": "^1.0.1",
+    "uuid": "^8.3.2"
+  }
+}

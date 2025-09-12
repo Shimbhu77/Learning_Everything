@@ -1,0 +1,21 @@
+package com.shimbhu.existing_functional_interfaces;
+
+import java.util.List;
+import java.util.function.Predicate;
+
+public class PredicateExample {
+
+    public static void main(String[] args) {
+
+        String name = "Payal";
+
+        Predicate<String> isMax = n -> n.length() > 4;
+
+        Predicate<Integer> isSumGreaterThanEqualTo100 = (a)  -> (a+50) >= 100;
+
+        System.out.println("is name greater than 4 : "+isMax.test(name));
+
+        System.out.println(" is sum greater than 100 : "+ isSumGreaterThanEqualTo100.test(40));
+    }
+
+}

@@ -1,0 +1,9 @@
+{
+  "name": "job-submit",
+  "version": "1.0.0",
+  "description": "Job submit Lambda for VOD solution",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.1000.0"
+  }
+}

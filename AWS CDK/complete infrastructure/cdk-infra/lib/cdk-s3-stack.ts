@@ -29,9 +29,6 @@ export class CdkS3Stack extends cdk.Stack {
       value: assetsBucket.bucketName,
       description: 'The name of the assets bucket',
     });
-    
-
-
-         
+           
   }
 }

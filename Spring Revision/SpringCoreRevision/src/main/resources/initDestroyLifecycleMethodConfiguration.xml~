@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <context:annotation-config/>
+
+    <bean class="com.shimbhu.init_destroy_lifecycle_method.University" name="university" init-method="init"
+          destroy-method="destroy">
+        <property name="name" value="Maa Ganga University"/>
+        <property name="location" value="Bharatvarsh"/>
+    </bean>
+
+    <bean class="com.shimbhu.init_destroy_lifecycle_method.Company" name="company">
+        <property name="name" value="ShimbhuAI"/>
+        <property name="field" value="Physics And AI Research"/>
+    </bean>
+
+    <bean class="com.shimbhu.init_destroy_lifecycle_method.Car" name="car">
+        <property name="car" value="SUV"/>
+        <property name="companyName" value="TATA Motors"/>
+    </bean>
+
+
+</beans>

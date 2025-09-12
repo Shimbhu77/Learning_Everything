@@ -1,0 +1,12 @@
+package com.shimbhu.mockserver;
+
+import com.github.tomakehurst.wiremock.WireMockServer;
+import static com.github.tomakehurst.wiremock.client.WireMock.*;
+
+public class MockDownstreamServer {
+
+    public static void main(String[] args) {
+        
+    }
+}
+

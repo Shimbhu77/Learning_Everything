@@ -22,3 +22,5 @@ const app = new cdk.App();
 
 new ParameterStoreStack(app, 'ParameterStoreStack', {
 });
+
+// fanchise mapping 
